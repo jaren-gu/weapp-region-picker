@@ -1,0 +1,12 @@
+<picker
+  mode="multiSelector"
+  range-key="name"
+  bindchange="multiPickerChange"
+  bindcolumnchange="multiPickerColumnChange"
+  value="{{selectedRegion}}"
+  range="{{pickerRange}}"
+>
+  <view class="picker">
+    当前选择：{{pickerRange[0][selectedRegion[0]].name}}，{{pickerRange[1][selectedRegion[1]].name}}，{{pickerRange[2][selectedRegion[2]].name}}
+  </view>
+</picker>
